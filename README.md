@@ -46,13 +46,7 @@
 ## Week 1 Sprint
 During this week we'll delve deeply into Garrett's _Five Elements of User Experience_. The five elements will become the framework within which we will discuss what a website/web app is and how to build one.
 
-### MVP
+### Skills
 - [User centered design](http://www.userfocus.co.uk/pdf/fable.pdf)
-- Five elements of user experience
-  - Strategy
-  - Scope
-  - Structure
-  - Skeleton
-  - Surface
-
+- [Five elements of user experience](http://www.jjg.net/elements/pdf/elements_ch02.pdf)
 - User needs analysis
