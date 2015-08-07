@@ -1,6 +1,6 @@
 # Week 01 MVP
 ## Elements of User Experience
-!["Five Planes of User Experience"]("/week01/five-planes-of-user-experience.png?raw=true")
+!["Five Planes of User Experience"](/five-planes-of-user-experience.png?raw=true)
 - Strategy
   - Product objectives
     - Business goals
@@ -95,9 +95,9 @@
   - Design by mimicry
   - Design by fiat
 
-!["Five Elements of User Experience"]("/week01/five-elements-of-user-experience.png?raw=true")
+!["Five Elements of User Experience"](/five-elements-of-user-experience.png?raw=true)
 
-!["Element Overlap"]("/week01/overlapping-elements.png?raw=true")
+!["Element Overlap"](/overlapping-elements.png?raw=true)
 
 ## Resources
-[_The Elements of User Experience_]("/week01/user-experience-elements.pdf") ([epub]("/week01/user-experience-elements.epub"))
+[_The Elements of User Experience_](/user-experience-elements.pdf) ([epub](/user-experience-elements.epub))
