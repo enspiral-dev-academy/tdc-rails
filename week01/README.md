@@ -1,37 +1,26 @@
 # Week 1
 ## Monday
 1. Orientation
-2. Pedagogy
+2. Andragogy
   1. Reciprocal Teaching discussion
   2. Pedagogy assignment
-    1. Ability Grouping vs. Cooperative Learning
-    2. Curricular Integration
-    3. Differentiated Instruction and Project-Based Learning
-    4. Experiential Education vs. Experiential Learning
-    5. Flipped Classroom
-    6. Scaffolding and Guilded Practice
-    7. Immersion
-    8. Portfolio, Job Shadowing, Workplace Skills, Service Learning
-    9. Synchronous Learning vs. Asynchronous Learning, Blended Learning
+      1. [Andragogy](http://www.otan.us/browse/index.cfm?fuseaction=doc&catid=23083&ref=117)
+      2. [Ability Grouping](/ability-grouping/README.md) vs. [Cooperative Learning](/ability-grouping/README.md)
+      3. [Active Learning](http://www.otan.us/browse/index.cfm?fuseaction=doc&catid=23610&ref=595) & [Project-based Learning](http://www.otan.us/browse/index.cfm?fuseaction=doc&catid=29858&ref=718)
+      4. [Blended Learning](http://www.otan.us/browse/index.cfm?fuseaction=doc&catid=33953&ref=813) ([Synchronous](http://www.otan.us/browse/index.cfm?fuseaction=doc&catid=23560&ref=547) & [Asyncrhonous](http://www.otan.us/browse/index.cfm?fuseaction=doc&catid=23559&ref=546) Learning)
+      5. [Curricular Integration](/curricular-integration/README.md)
+      6. [Differentiated Instruction](http://www.otan.us/browse/index.cfm?fuseaction=doc&catid=33548&ref=780) (& [Learning Styles](http://blog.matbury.com/2015/08/12/learning-styles-mindsets-and-adaptive-strategies/) reconsidered)
+      7. [Experiential Education](http://www.otan.us/browse/index.cfm?fuseaction=doc&catid=23355&ref=319) & [Experiential Learning](http://www.otan.us/browse/index.cfm?fuseaction=doc&catid=23641&ref=623)
+      8. [Job Shadowing](https://en.wikipedia.org/wiki/Job_shadow)
+      9. [Pair Programming](https://en.wikipedia.org/wiki/Pair_programming)
+      10. [Service Learning](http://www.otan.us/browse/index.cfm?fuseaction=doc&catid=23539&ref=538) and Open Source vs. Free Software
+      11. [Universal Design for Learning](http://www.otan.us/browse/index.cfm?fuseaction=doc&catid=32778&ref=762) & [Accessibility](https://en.wikipedia.org/wiki/Web_accessibility)/[Usability](https://en.wikipedia.org/wiki/Web_usability)
 
-  3. Pedagogy presentations
+  3. Andragogy presentations
 
 3. Agile methodology
   1. Agile manifesto
   2. The Twelve Principles
-  3. 12 Principles distilled for EDA (assigned to students)
-    1. Integrity
-    2. Adaptation
-    3. Iteration
-    4. Teamwork
-    5. Empathy & trust
-    6. Communication, face-to-face (stand ups)
-    7. Real world
-    8. Balance & sustainability
-    9. Practice makes permanent
-    10. Simplicity
-    11. Autonomy
-    12. Feedback
 
 4. How the Internet & WWW work
   1. Client-server exercise
