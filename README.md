@@ -1,4 +1,8 @@
 # EDA Rails Top-Down curriculum
+
+[3 Week](/3week.md)  
+[9 Week](/9week.md)
+
 ## Objectives
 - Teach the students to teach themselves
 - Use the agile process consistently from start to finish
