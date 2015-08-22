@@ -1,5 +1,5 @@
-# Week 1
-## Monday
+# Week 1: User Experience
+
 1. Orientation
 2. Andragogy
   1. Reciprocal Teaching discussion
@@ -28,7 +28,7 @@
 
 5. Pitches to new class & formation of teams
 6. Five Elements of User Experience: Strategy
-  1. User needs analysis
+  1. [User needs analysis](http://webguide.gov.au/accessibility-usability/user-needs-analysis/)
     1. Identify stakeholders
     2. Market segmentation
     3. Brainstorming session
