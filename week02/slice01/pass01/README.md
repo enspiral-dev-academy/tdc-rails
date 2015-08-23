@@ -30,7 +30,7 @@ In Rails, we configure our routes in a configuration file called `config/routes.
 
 If you look in your application's `config` folder and open the `routes.rb` file, you'll find it has many comments explaining how to set up various types of routes. Rails is nice this way. Much of what you need to know is added as comments right where you need them. I delete these comments because I'm an expert at Rails. You may wish to leave them around for later reference. But remember that you can always create a blank Rails app for reference!
 
-We're going to start with the home page, so let's add a route to make our config.rb file look like this:
+We're going to start with the home page, so let's add a route to make our `config/routes.rb` file look like this:
 
 ```ruby
 Rails.application.routes.draw do

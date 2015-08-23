@@ -75,8 +75,8 @@ This will take a while. The **nokogiri** gem in particular takes some time as it
 
 ## Building the application
 
-1. [First slice: Home page](/slice01/README.md)
-2. [Second slice: About us](/slice02/README.md)
-3. [Third slice: Persistent links](/slice03/README.md)
-4. [Fourth slice: Logo link](/slice04/README.md)
-5. [Fifth slice: Interactivity](/slice05/README.md)
+1. [First slice: Home page](/week02/slice01/README.md)
+2. [Second slice: About us](/week02/slice02/README.md)
+3. [Third slice: Persistent links](/week02/slice03/README.md)
+4. [Fourth slice: Logo link](/week02/slice04/README.md)
+5. [Fifth slice: Interactivity](/week02/slice05/README.md)
