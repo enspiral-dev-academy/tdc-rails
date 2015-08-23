@@ -17,3 +17,6 @@ Let's get started!
 3. [Pass 3](/week02/slice05/pass03/README.md): Adding Capybara
 4. [Pass 4](/week02/slice05/pass04/README.md): Testing the form
 5. [Pass 5](/week02/slice05/pass05/README.md): Flash messages
+6. [Pass 6](/week02/slice05/pass06/README.md): Modeling an inquiry
+7. [Pass 7](/week02/slice05/pass07/README.md): Setting up the email
+8. [Pass 8](/week02/slice05/pass08/README.md): Sending the email

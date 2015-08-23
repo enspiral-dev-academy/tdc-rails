@@ -77,5 +77,5 @@ Now if we submit the form, the page redirects to the home page, and the success 
 
 ![Success message](/images/inquiry-success-flash.png)
 
-And if we reload the page, it's gone. So it's a one-time message.
+And if we reload the page, it's gone. So it's a one-time message. And our feature test scenario still passes. Nice.
 
