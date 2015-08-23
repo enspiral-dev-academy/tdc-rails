@@ -77,3 +77,6 @@ This will take a while. The **nokogiri** gem in particular takes some time as it
 
 1. [First slice: Home page](/slice01/README.md)
 2. [Second slice: About us](/slice02/README.md)
+3. [Third slice: Persistent links](/slice03/README.md)
+4. [Fourth slice: Logo link](/slice04/README.md)
+5. [Fifth slice: Interactivity](/slice05/README.md)
