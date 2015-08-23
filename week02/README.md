@@ -20,8 +20,59 @@ rbenv local 2.2.3
 
 This creates a hidden file in your repository called *.ruby-version*. If we look inside that file, we'll see that it is as simple as can be:
 
+
+![Our project so far](/images/ruby-version.png)
+
+## Create the Rails project
+
+Normally, we'd create our rails project with this command:
+
 ```
-2.2.3
+rails new my-rails-project
 ```
 
-[Our project so far](/images/ruby-version.png)
+But as we're already in the project folder, we can simply use the current folder. Rails will use the folder's name for the name of the project, so ensure that you've named the folder correctly. It's a pain to go back and change this!
+
+We're also going to add some arguments to our call to `rails new` to give it a few special instructions. To see what these do (and to see other options), you can try `rails -h new`.
+
+```
+rails new . -BGTO --skip-turbolinks
+```
+
+This will create a set of files and folders. That's our new Rails app. That was easy!
+
+![New Rails app folders](/images/new-rails-app.png)
+
+Don't let the number of files and folders freak you out. Most of these we'll never bother with, and those you will use you'll use over and over and over again until they become second nature. For now, just follow along.
+
+![New Rails app in Atom](/images/new-rails-in-atom.png)
+
+## Installing the dependencies
+
+A big part of building a Rails application is managing your applications dependencies. These dependencies take the form of ruby "gems"&mdash;small, reusable code libraries that will save us the time and effort of building everything from scratch.
+
+Rails itself is a ruby gem.
+
+We're going to use a gem called [bundler]() to manage our other gems. Bundler uses a Gemfile to list the gems and versions we'll need. A second "Gemfile.lock" file locks in certain versions so we can make sure that all our developers are using the same versions. Don't mess with the Gemfile.lock file.
+
+Let's clean up the Gemfile. You may wish to leave the comments in for later reference. I prefer to keep the file as clean as possible, so I'll delete them.
+
+We'll need Rails, of course. We may use Sass later (for CSS), so let's keep that. And Uglifier is used to compress our JavaScript and CSS files so that they'll load faster on the client. We definitely want that.
+
+But we won't be using CoffeeScript in this course, so we'll delete that gem. The rest should be OK. My Gemfile now looks like this:
+
+![Gemfile](/images/gemfile.png)
+
+Now we need to install them, so we'll run the bundler command in the project's root folder (via the terminal, of course):
+
+```
+bundle
+```
+
+Note: it's `bundle`, not `bundler`. The former is the command, the latter is the name of the gem. You can also use `bundle install`.
+
+This will take a while. The **nokogiri** gem in particular takes some time as it needs to compile some C code. Take a break.
+
+## Building the application
+
+1. [First slice: Home page](/slice01/README.md)
