@@ -15,4 +15,5 @@ Let's get started!
 1. [Pass 1](/week02/slice05/pass01/README.md): Adding RSpec
 2. [Pass 2](/week02/slice05/pass02/README.md): Feature testing
 3. [Pass 3](/week02/slice05/pass03/README.md): Adding Capybara
-4. [Pass 3](/week02/slice05/pass04/README.md): Testing the form
+4. [Pass 4](/week02/slice05/pass04/README.md): Testing the form
+5. [Pass 5](/week02/slice05/pass05/README.md): Flash messages
