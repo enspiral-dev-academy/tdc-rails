@@ -8,3 +8,4 @@ A large part of what you'll do with Rails is probably to build CRUD apps, or at 
 4. [Pass 4](/week02/slice07/pass04/README.md): Show
 5. [Pass 5](/week02/slice07/pass05/README.md): Edit/update
 6. [Pass 6](/week02/slice07/pass06/README.md): Destroy
+7. [Pass 7](/week02/slice07/pass07/README.md): Navigation
