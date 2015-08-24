@@ -11,7 +11,7 @@ So that's what we'll do.
   5. Give a brief description. This will be used on GitHub and will also be the default text for your README.md file. Always complete this.
   6. Choose public or private.
   7. Check the "Initialize this repository with a README" checkbox. This will cause GitHub to do the initial commit for you and will make it easier to clone and use your app. And you always want a README file, so it's just good practice.
-  8. Select a .gitignore file format. I prefer the GitHub version to the one that Rails provides, so I generally select the Rails .gitignore file here.
+  8. Select a .gitignore file format. I prefer the GitHub version to the one that Rails provides, so I generally select the Github .gitignore file here.
   9. You can choose a license if you wish.
   10. Click **Create Repository** to create the repository.
 
