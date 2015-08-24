@@ -13,3 +13,4 @@ Initially, we're going to use the MongoDB document database. It stores data in a
 1. [Pass 1](/week02/slice06/pass01/README.md): Persistence with Mongoid
 2. [Pass 2](/week02/slice06/pass02/README.md): Validation
 3. [Pass 3](/week02/slice06/pass03/README.md): More validation
+4. [Pass 4](/week02/slice06/pass04/README.md): Feature test?
