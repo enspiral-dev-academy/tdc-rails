@@ -49,6 +49,30 @@ body {
 }
 ```
 
+And grab the one called "Custom page CSS", it should look like this:
+
+```css
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+body > .container {
+  padding: 60px 15px 0;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+code {
+  font-size: 80%;
+}
+```
+
 Paste this code into your `app/assets/stylesheets/application.css` file below all the comments:
 
 ![Sticky footer CSS](/images/sticky-footer-css.png)
