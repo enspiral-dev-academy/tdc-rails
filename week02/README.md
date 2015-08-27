@@ -82,3 +82,4 @@ This will take a while. The **nokogiri** gem in particular takes some time as it
 5. [Fifth slice: Interactivity](/week02/slice05/README.md)
 6. [Sixth slice: Persistence and validation](/week02/slice06/README.md)
 7. [Seventh slice: CRUD](/week02/slice07/README.md)
+8. [Eighth slice: Authentication](/week02/slice08/README.md)

@@ -7,7 +7,7 @@ So that's what we'll do.
   1. Open your browser and go to the GitHub account where you want to create your project repo.
   2. Click on the **Repositories** tab.
   3. Click on the **New** button to create a new repository.
-  4. Add the name of your new repository. The best practice is to use "snake-case", which is all lowercase with words separated by a hyphen: *my-cool-rails-app*.
+  4. Add the name of your new repository. The best practice is to use "train-case", which is all lowercase with words separated by a hyphen: *my-cool-rails-app*.
   5. Give a brief description. This will be used on GitHub and will also be the default text for your README.md file. Always complete this.
   6. Choose public or private.
   7. Check the "Initialize this repository with a README" checkbox. This will cause GitHub to do the initial commit for you and will make it easier to clone and use your app. And you always want a README file, so it's just good practice.

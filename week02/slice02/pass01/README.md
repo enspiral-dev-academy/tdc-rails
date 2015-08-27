@@ -20,6 +20,8 @@ You should know the drill by now. Let's check the `rake routes` output to see if
 
 Looks like it did. And now we can get the About Us page URL or path using the "about" prefix:
 
+(Note: We'll be using these in our views and controllers. Please don't type these into the terminal!)
+
 ```ruby
 about_path # returns /about
 
