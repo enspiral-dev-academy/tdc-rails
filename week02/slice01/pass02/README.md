@@ -33,7 +33,7 @@ Where did all that extra HTML come from?
 
 Well, it turns out that Rails automatically looks for a wrapper template in the `app/views/layout` folder called `application.html.erb` and it takes the output of our `index.html` template and inserts it into the `application.html.erb` template at the point where we see the following:
 
-```erb
+```html
   <%= yield %>
 ```
 
@@ -41,13 +41,13 @@ The `.erb` extension on the `application.html.erb` file tells Rails to run this 
 
 If we want to run Ruby code in our template *without* outputting anything to the final HTML, we can use these brackets:
 
-```erb
+```html
  <% "this will not be added to the output" %>
 ```
 
 If we're expecting output from the code, we'll need to add an = sign after the first bracket:
 
-```erb
+```html
  <%= "this will be added to the output" %>
 ```
 
@@ -81,13 +81,13 @@ end
 
 Now we can go to our templates and use this variable. In our `application.html.erb` template, we'll use it for the &lt;title&gt; element, and we'll provide a default in case we forget to set it on some page:
 
-```erb
+```html
 <title><%= @title || "TDC Rules!" %></title>
 ```
 
 And we'll add it to our `index.html.erb` template:
 
-```erb
+```html
 <h1><%= @title %></h1>
 <p>
   Hi, you found me! I'm the home page.

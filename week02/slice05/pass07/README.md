@@ -126,14 +126,14 @@ Let's see if we can't make all these pass with just one bit of code and a couple
 First, the templates, as they are easiest:
 
 `app/views/inquiry_mailer/inquiry_email.html.erb`:
-```erb
+```html
 <p><%= @inquiry.message %></p>
 ```
 
 And:
 
 `app/views/inquiry_mailer/inquiry_email.txt.erb`:
-```erb
+```html
 <%= @inquiry.message %>
 ```
 

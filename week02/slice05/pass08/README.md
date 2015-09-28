@@ -6,7 +6,7 @@ First, let's improve our form so that it contains all four fields. And let's let
 
 Rails has a `form_for` helper method that will help us to get the form right. We can check out the [API documentation](http://api.rubyonrails.org/v4.2.3/) for it (search for "form_for"). Here is the example from the API:
 
-```erb
+```html
 <%= form_for :person do |f| %>
   First name: <%= f.text_field :first_name %><br />
   Last name : <%= f.text_field :last_name %><br />
@@ -18,7 +18,7 @@ Rails has a `form_for` helper method that will help us to get the form right. We
 
 We're using Bootstrap, and we can do better than the above. We'll also take advantage of the helper for labels. Here's our updated Contact form. To simplify it a little, I've ditched the &lt;fieldset&gt;, at least for the moment, and I've wrapped it in a Bootstrap "row" class:
 
-```erb
+```html
 <div class="row">
   <div class="col-sm-6">
     <%= form_for :inquiry do |f| %>
@@ -52,7 +52,7 @@ That gives us:
 
 Note that Rails decided to name our button "Save inquiry". We can either force rename it by passing a string to the submit method, thus:
 
-```erb
+```html
 <%= f.submit "Send message" %>
 ```
 
@@ -65,7 +65,7 @@ click_button 'Save Inquiry'
 
 I'll choose to override the button (I like "send message" better), and while I'm at it I'll restore the Bootstrap classes:
 
-```erb
+```html
 <%= f.submit "Send message", class: "btn btn-info btn-sm" %>
 ```
 
@@ -141,7 +141,7 @@ Complete the form, click the "Send message" button, and letter_opener shows us o
 
 We've pretty much got a working Contact form. One last quick thing to do: Let's fix the link in the navbar. So, in `app/views/layouts/application.html.erb` we set the contact link thus:
 
-```erb
+```html
 <li>
   <%= link_to_unless_current "Contact", contact_path do |label|
     content_tag(:span, label, class: "this-page")

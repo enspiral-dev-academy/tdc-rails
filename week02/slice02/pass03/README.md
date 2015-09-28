@@ -47,7 +47,7 @@ content_tag(:span, "About", class: "this-page")
 
 That changes our ERB code to this:
 
-```erb
+```html
 <li><%= link_to_unless_current "About", about_path do
   content_tag(:span, "About", class: "this-page")
 end %></li>
@@ -122,7 +122,7 @@ If you turn one off and it changes nothing, then leave it off. If it changes the
 
 That looks like it works! Now let's fix the Home link as well. We no longer need the "active" class on the &lt;li&gt; element:
 
-```erb
+```html
 <ul class="nav navbar-nav">
   <li><%= link_to_unless_current "Home", root_path do
     content_tag(:span, "Home", class: "this-page")

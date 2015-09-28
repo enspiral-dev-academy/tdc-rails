@@ -80,7 +80,7 @@ Why, indeed. Let's add some code to our template to handle the errors directly. 
 
 Let's check if the `errors` object has any errors, and if it does, display them in a list. We can add this to the top of our `app/views/inquiries/new.html.erb` template:
 
-```erb
+```html
 <% if @inquiry.errors.any? %>
   <div id="error_explanation">
     <h2>

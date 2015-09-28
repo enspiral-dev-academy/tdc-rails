@@ -33,7 +33,7 @@ end
 
 And we'll add a `app/views/site/privacy.html.erb` file:
 
-```erb
+```html
 <article>
   <header class="page-header">
     <h1>Our privacy policy</h1>

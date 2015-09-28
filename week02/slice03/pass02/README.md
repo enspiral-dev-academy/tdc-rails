@@ -37,7 +37,7 @@ end
 
 And we'll add a `app/views/site/terms.html.erb` file:
 
-```erb
+```html
 <article>
   <header class="page-header">
     <h1>Our terms of use</h1>

@@ -35,7 +35,7 @@ end
 
 Missing template! Let's copy the `new.html.erb` template to `edit.html.erb`:
 
-```erb
+```html
 <% if @movie.errors.any? %>
   <div id="error_explanation">
     <h2><%= pluralize(@movie.errors.count, "issue") %> prevented your movie from being updated:</h2>

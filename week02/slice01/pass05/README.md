@@ -4,7 +4,7 @@ We don't want to have to copy and paste all that header and footer code in every
 
 Let's copy the header, footer, and the &lt;main&gt; tag (but not its contents) into the `application.html.erb` template, and put the `<%= yield %>` element in the &lt;main&gt; element:
 
-```erb
+```html
 <!DOCTYPE html>
 <html>
   <head>
@@ -53,7 +53,7 @@ Let's copy the header, footer, and the &lt;main&gt; tag (but not its contents) i
     </nav>
 
     <!-- Begin page content -->
-    <main class="container main" role="main">
+    <main class="container">
       <%= yield %>
     </main>
 
@@ -70,7 +70,7 @@ Now let's put our `index.html.erb` template back to something similar to what we
 
 We should probably be using the &lt;article&gt; element for our main content. The header should be in a &lt;header&gt; element, of course. We'll keep the class attribute as that's how Bootstrap applies the CSS that makes the page look halfway decent:
 
-```erb
+```html
 <article>
   <header class="page-header">
     <h1><%= @title %></h1>

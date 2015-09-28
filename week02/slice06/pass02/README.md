@@ -64,7 +64,7 @@ Turns out that Rails `form_for` helper can take an instance of a class instead o
 
 Let's update the form:
 
-```erb
+```html
 <%= form_for @inquiry do |f| %>
 ```
 
@@ -93,7 +93,7 @@ Oh, yeah. We're posting this form to `/contact`. But we've told the form that it
 
 Of course we can. Let's change the `form_for` helper call to this:
 
-```erb
+```html
 <%= form_for @inquiry, url: contact_path do |f| %>
 ```
 

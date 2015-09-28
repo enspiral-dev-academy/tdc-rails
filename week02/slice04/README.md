@@ -8,7 +8,7 @@ Right now our Logo is missing and what is holding that spot doesn't really link 
 
 Here is the current code:
 
-```erb
+```html
   <a class="navbar-brand" href="#">Project name</a>
 </div>
 <div id="navbar" class="collapse navbar-collapse">
@@ -20,7 +20,7 @@ Here is the current code:
 
 Let's start by moving that Home link up and changing it to the name of our web site/application:
 
-```erb
+```html
   <a class="navbar-brand" href="#">Project name</a>
   <%= link_to_unless_current "Home", root_path do
     content_tag(:span, "Home", class: "this-page")
@@ -40,7 +40,7 @@ Here's one trick: As the `link_to_unless_current` helper is a variation on the b
 
 And here we find that the :options parameter is for just a few options (data, method, etc.). So where would class go? Well, it's an HTML attribute, so mabye in the :html_options? Let's try it:
 
-```erb
+```html
 <%=
   link_to_unless_current "Enspiral Dev Academy",
     root_path, html_options: { class: "navbar-brand" } do |label|
@@ -59,7 +59,7 @@ Oh, that's not right! Let's look at the HTML:
 
 Grrr. Seems we don't need that outer key (html_options). Let's try it with just the class key:
 
-```erb
+```html
 <%=
   link_to_unless_current "Enspiral Dev Academy",
     root_path, class: "navbar-brand" do |label|

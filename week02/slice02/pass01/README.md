@@ -47,7 +47,7 @@ end
 
 Reload the page and, naturally, we get the template error. So let's add the template to `app/views/site/about.html.erb`:
 
-```erb
+```html
 <article>
   <header class="page-header">
     <h1>About us</h1>

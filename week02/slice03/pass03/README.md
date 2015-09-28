@@ -8,7 +8,7 @@ Let's add our persistent links to the footer, which is where we generally expect
 
 Here is our current footer (from `app/views/layouts/application.html.erb`):
 
-```erb
+```html
 <footer class="footer">
   <div class="container">
     <p class="text-muted">Place sticky footer content here.</p>
@@ -22,7 +22,7 @@ It looks a bit ugly on the page. Maybe we can fix that.
 
 We need some padding. And let's change that text to our site copyright, just for fun. We'll change our class to one that has *semantic meaning* for us, too.
 
-```erb
+```html
 <footer class="footer">
   <div class="container">
     <p class="copyright">&copy; 2015 Enspiral Dev Academy. Yeah.</p>
@@ -66,7 +66,7 @@ And my page looks better:
 
 So now let's add the links to the Privacy policy and Terms of use pages:
 
-```erb
+```html
 <footer class="footer">
   <div class="container">
     <p class="pull-right">
@@ -102,7 +102,7 @@ Oh, I see, I forgot to include policy in the span text. Well, that's a pain. Isn
 
 Well, turns out there is. The text of the link is passed in as a parameter to the block, so we can reuse it. Let's rewrite our ERB code to take advantage of this feature:
 
-```erb
+```html
 <p class="pull-right">
   <%= link_to_unless_current "Privacy policy", privacy_path do |label|
     content_tag(:span, label, class: "this-page")
@@ -136,7 +136,7 @@ Now let's style them properly. One thing I noticed, though, is that the top navb
 
 So first let's fix our HTML:
 
-```erb
+```html
 <nav class="pull-right">
   <%= link_to_unless_current "Privacy policy", privacy_path do |label|
     content_tag(:span, label, class: "this-page")

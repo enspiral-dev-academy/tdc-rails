@@ -30,7 +30,7 @@ Run:
 
 Add the template at `app/views/movies/show.html.erb`:
 
-```erb
+```html
 <article>
   <header class="page-header">
     <h1>Movie</h1>
@@ -53,7 +53,7 @@ end
 
 And list the details in the template at `app/views/movies/show.html.erb`:
 
-```erb
+```html
 <article>
   <header class="page-header">
     <h1><%= @movie.title %></h1>

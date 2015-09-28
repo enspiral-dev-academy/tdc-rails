@@ -93,7 +93,7 @@ end
 
 And we'll need a view template, `app/views/inquiries/new.html.erb` that includes a &lt;form&gt; element:
 
-```erb
+```html
 <form/>
 ```
 

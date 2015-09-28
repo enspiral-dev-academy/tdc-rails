@@ -34,7 +34,7 @@ Run the specs:
 
 Easy peasy! Add a template as `app/views/movies/index.html.erb`:
 
-```erb
+```html
 <article>
   <header class="page-header">
     <h1>Movies</h1>
@@ -58,7 +58,7 @@ end
 
 Mongoid's `all` class method on a model returns a *cursor*. To get the array of Movie instances out of it, we'll call `to_a` (to array) on it. Now in our template:
 
-```erb
+```html
 <article>
   <header class="page-header">
     <h1>Movies</h1>

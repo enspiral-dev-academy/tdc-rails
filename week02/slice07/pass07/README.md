@@ -4,7 +4,7 @@ First, let's add a link to our navbar and get rid of the useless dropdown:
 
 In `app/views/layouts/application.html.erb`:
 
-```erb
+```html
 <ul class="nav navbar-nav">
   <li>
     <%= link_to_unless_current "About", about_path do |label|
@@ -30,7 +30,7 @@ Looks good:
 
 Now let's add some links to our index page at `app/views/movies/index.html.erb`:
 
-```erb
+```html
 <article class="col-md-6">
   <header class="page-header">
     <div class="pull-right">
@@ -59,7 +59,7 @@ And we notice that the form is the same on both the new and edit pages. Let's ma
 
 `app/views/movies/edit.html.erb`:
 
-```erb
+```html
 <% if @movie.errors.any? %>
   <div id="error_explanation">
     <h2><%= pluralize(@movie.errors.count, "issue") %> prevented your movie from being updated:</h2>
@@ -87,7 +87,7 @@ Note that we also changed the &lt;h1&gt; element to display the title and we've 
 
 `app/views/movies/new.html.erb`:
 
-```erb
+```html
 <% if @movie.errors.any? %>
   <div id="error_explanation">
     <h2><%= pluralize(@movie.errors.count, "issue") %> prevented your movie from being added:</h2>
@@ -113,7 +113,7 @@ Note that we also changed the &lt;h1&gt; element to display the title and we've 
 
 And we've added an edit link to the show page:
 
-```erb
+```html
 <article>
   <header class="page-header">
     <h1><%= @movie.title %></h1>

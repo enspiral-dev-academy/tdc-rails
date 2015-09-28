@@ -4,7 +4,7 @@ How do we get to our About Us page and back to our Home page? We don't really wa
 
 So let's add some links in our navbar. Currently, we have this in our `app/views/layouts/application.html.erb` file, lines 27-29:
 
-```erb
+```html
 <ul class="nav navbar-nav">
   <li class="active"><a href="#">Home</a></li>
   <li><a href="#about">About</a></li>
@@ -25,7 +25,7 @@ link_to "Profiles", profiles_path
 
 Let's try this in our `application.html.erb` file, but with our about page, and we'll do the same for our home page:
 
-```erb
+```html
 <ul class="nav navbar-nav">
   <li class="active"><%= link_to "Home", root_path %></li>
   <li><%= link_to "About", about_path %></li>

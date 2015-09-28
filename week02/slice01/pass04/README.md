@@ -31,14 +31,18 @@ Go to that page and look at the page source (in Chrome on a Mac this is Cmd-Alt-
 We'll also need the special CSS code for this particular template, so look in the &lt;head&gt; of the source code for a &lt;script&gt; element with an HTML comment above it that says "Custom styles for this template". Click on the link to the [CSS style sheet](http://getbootstrap.com/examples/sticky-footer-navbar/sticky-footer-navbar.css) for the custom CSS (sticky-footer-navbar.css). You should see two sets of CSS properties. Grab the one called "Sticky footer styles". It should look like this:
 
 ```css
+/* Sticky footer styles
+-------------------------------------------------- */
 html {
   position: relative;
   min-height: 100%;
 }
+
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
 }
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -46,6 +50,28 @@ body {
   /* Set the fixed height of the footer here */
   height: 60px;
   background-color: #f5f5f5;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+body > .container {
+  padding: 60px 15px 0;
+}
+
+.container .text-muted {
+  margin: 20px 0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+code {
+  font-size: 80%;
 }
 ```
 
@@ -53,59 +79,11 @@ Paste this code into your `app/assets/stylesheets/application.css` file below al
 
 ![Sticky footer CSS](/images/sticky-footer-css.png)
 
-Now we should be able to reload our page and see the template. When I do this, however, I find that the main body of the page has slid up behind the navbar. This is probably because of some CSS that Rails is inserting and the fact that we've inserted the Bootstrap **before** rather than **after** the Rails CSS.
+Now we should be able to reload our page and see the template.
 
-Really, we want to insert it in the middle&mdash;after the Rails CSS but before our own. We can do this using the "asset pipeline", but it's complicated so we'll leave it for later.
+Here is our current `app/views/site/index.html.erb` template:
 
-For now we'll just work around it by adding some margin to the top of our main elements. Let's change our main &lt;div&gt; element to use the HTML &lt;main&gt; element. But because this isn't completely supported in Internet Explorer yet (what a surprise!), we'll add the ARIA role of "main" to it. More on ARIA roles later. We'll also add the ".main" class, just to be safe.
-
-```erb
-<!-- Begin page content -->
-<main class="container main" role="main">
-  . . .
-</main>
-```
-
-Now in our `app/assets/stylesheets/application.css` file, let's add some top margin to our main element:
-
-```css
-.main {
-   margin-top: 50px;
- }
-```
-
-Reload the page and it looks good now!
-
-Here's our current CSS:
-
-```css
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
-}
-
-.main {
-  margin-top: 50px;
-}
-
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 60px;
-  background-color: #f5f5f5;
-}
-```
-
-And our current `app/views/site/index.html.erb` template:
-
-```erb
+```html
 <!-- Fixed navbar -->
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
@@ -141,7 +119,7 @@ And our current `app/views/site/index.html.erb` template:
 </nav>
 
 <!-- Begin page content -->
-<main class="container main" role="main">
+<main class="container">
   <div class="page-header">
     <h1>Sticky footer with fixed navbar</h1>
   </div>

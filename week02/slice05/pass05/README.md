@@ -43,7 +43,7 @@ There are two kinds of flash messages (and can be more): alerts and notices. We'
 
 We'll probably want to display flash messages on many pages, so it makes sense to add them to the `app/views/layouts/application.html.erb` template:
 
-```erb
+```html
     <main class="container main" role="main">
         <% if flash.alert %>
           <div class="messages">

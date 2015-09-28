@@ -69,7 +69,7 @@ This time you expected it, right? OK, we need a `app/views/movies/new.html.erb` 
 
 We already have a nice form, let's just copy our inquiry form over and change it to a movie form:
 
-```erb
+```html
 <% if @movie.errors.any? %>
   <div id="error_explanation">
     <h2><%= pluralize(@movie.errors.count, "issue") %> prevented your movie from being added:</h2>
