@@ -1,8 +1,8 @@
 # Moving the header and footer to the layout template
 
-We don't want to have to copy and paste all that header and footer code in every page, so we should move them to our `app/views/layouts/application.html.erb` template.
+We don't want to have to copy and paste all that navbar and footer code in every site page, so we should move them to our `app/views/layouts/application.html.erb` template. Remember that the application.html.erb template is used to *wrap* the individual page templates.
 
-Let's copy the header, footer, and the &lt;main&gt; tag (but not its contents) into the `application.html.erb` template, and put the `<%= yield %>` element in the &lt;main&gt; element:
+Let's copy the `<nav>`, `<footer>`, and the `<main>` tags (but not the contents of main) into the `application.html.erb` template, and put the `<%= yield %>` element in the `<main>` tag. When you get done, your `application.html.erb` file should look like this:
 
 ```html
 <!DOCTYPE html>
@@ -68,7 +68,9 @@ Let's copy the header, footer, and the &lt;main&gt; tag (but not its contents) i
 
 Now let's put our `index.html.erb` template back to something similar to what we had before. In the process, let's use HTML5 properly (Bootstrap tries a little too hard to be backwards compatible).
 
-We should probably be using the &lt;article&gt; element for our main content. The header should be in a &lt;header&gt; element, of course. We'll keep the class attribute as that's how Bootstrap applies the CSS that makes the page look halfway decent:
+**Remember that the object is to put into each individual page template *only* what is unique to that page.** We're trying to DRY (don't repeat yourself) up our code by eliminating unnecessary duplication. If that doesn't make sense, ask the instructor to explain.
+
+We should probably be using the `<article>` element for our main content. The header should be in a `<header>` element, of course. We'll keep the class attribute as that's how Bootstrap applies the CSS that makes the page look halfway decent:
 
 ```html
 <article>

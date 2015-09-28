@@ -30,7 +30,7 @@ First, let's add a feature spec. We'll call it `spec/features/login_spec.rb`:
 require 'rails_helper'
 
 RSpec.feature "Login", type: :feature do
-  scenario 'user can complete and submit the login form' do
+  scenario 'user can log in' do
     visit login_path
 
     fill_in 'Email', with: "joe@mama.com"
@@ -77,7 +77,7 @@ And . . .
 
 So:
 
-```erb
+```html
 <article>
   <div class="row">
     <div class="col-sm-4 col-sm-offset-4">

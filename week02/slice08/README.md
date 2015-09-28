@@ -25,5 +25,6 @@ So don't use gems unless it makes sense to. Prefer to write code yourself whenev
 - [Pass 1](/week02/slice08/pass01/README.png): Log in form
 - [Pass 2](/week02/slice08/pass02/README.png): User model
 - [Pass 3](/week02/slice08/pass03/README.png): Logging in
-
-
+- [Pass 4](/week02/slice08/pass04/README.png): Completing the process
+- [Pass 5](/week02/slice08/pass05/README.png): Adding encryption
+- [Pass 6](/week02/slice08/pass06/README.png): Using has_secure_password
