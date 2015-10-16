@@ -110,3 +110,8 @@ Next pass we'll extend our scenario to expect more, *then* we'll extend our code
 Red. Green. Refactor.
 
 Now to refactor . . .
+
+Tip - [Rspec format documentation](https://www.relishapp.com/rspec/rspec-core/v/2-4/docs/command-line/format-option)
+if you add "--format documentation" to your .rspec file you get a your test result formatted differenly.
+
+![Add format documentaiton option for testing](/images/rspec-format-documentation.png)
